@@ -1,0 +1,35 @@
+.Card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card-image
+{        
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
+}
+.card-details
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.card-slogan
+{
+    font-weight: var(--bold-fw);
+    font-size: var(--large-fs);    
+    color: var(--accent-1-cr);
+}
+.card-title
+{
+
+}
+.card-description
+{
+    text-align: center;
+    font-weight: var(--light-fw);
+}

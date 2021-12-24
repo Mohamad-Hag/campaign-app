@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*********************************** IMPORTS ***********************************/
+/* Google Font: Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/************************* CSS RULES *************************/
+*
+{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  font-family: var(--main-ff);
+  font-size: var(--medium-fs);  
+  font-weight: var(--regular-fw);  
+  color: var(--txt-cr);
+}
+:root
+{  
+  /** COLOR **/ /** bg: Background, cr: Color, txt: Text **/  
+  --primary-bg: hsl(0, 0%, 100%);
+  --secondary-bg: hsl(240, 43%, 99%);
+  --accent-1-cr: hsl(269, 83%, 21%);
+  --accent-2-cr: hsl(283, 73%, 38%);
+  --accent-bg: hsl(283, 73%, 90%);
+  --txt-cr: hsl(0, 0%, 20%);
+
+  /** FONT **/
+  --main-ff: 'Open Sans', sans-serif; /* ff: Font Family */
+  --small-fs: small; /* fs: Font Size */
+  --medium-fs: medium;
+  --large-fs: large;
+  --x-large-fs: x-large; 
+  --xx-large-fs: 50px; 
+  --light-fw: 300; /* fw: Font Weight */
+  --regular-fw: 400;
+  --medium-fw: 500;
+  --semi-bold-fw: 600;
+  --bold-fw: 700;
+  --extra-bold-fw: 800;
+
+  /** SPACE **/
+  --tiny-sp: 10px; /* sp: Space */
+  --small-sp: 20px;
+  --medium-sp: 40px; 
+  --large-sp: 80px;
+
+  /** SHADOW **/
+  --card-sh: 0 10px 20px 0 #00000020; /* sh: Shadow */
+}
+html
+{
+
+}
+body
+{
+  background-color: var(--secondary-bg);
+}
+::-moz-focus-inner,
+::-moz-focus-outer
+{
+  border: none;
+}
+img, button, a, svg, input::placeholder
+{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;  
+}
+img, svg
+{
+  -webkit-user-drag: none;
+}
+::selection
+{
+  background-color: var(--accent-1-cr);
+  color: var(--primary-bg);
 }

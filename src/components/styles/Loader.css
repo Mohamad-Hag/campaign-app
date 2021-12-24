@@ -1,0 +1,31 @@
+.Loader
+{
+    --loader-size: 50px;
+    animation: loader-animate .5s linear infinite; 
+    border: 5px solid var(--accent-1-cr);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+@keyframes loader-animate
+{
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+.loader-small
+{
+    height: calc(var(--loader-size) - 30px);
+    width: calc(var(--loader-size) - 30px);
+}
+.loader-medium
+{
+    height: var(--loader-size);
+    width: var(--loader-size);
+}
+.loader-large
+{
+    height: calc(var(--loader-size) + 30px);
+    width: calc(var(--loader-size) + 30px);
+}

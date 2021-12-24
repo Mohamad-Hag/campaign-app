@@ -1,0 +1,26 @@
+.IconButton
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;    
+    cursor: pointer;
+    transition: .3s;
+}
+.IconButton:hover
+{
+    filter: grayscale(80%);
+}
+.IconButton .bi
+{
+    color: var(--primary-bg);
+    font-size: 25px;
+}
+.icon-button-primary
+{
+    background-color: var(--accent-1-cr);
+}
+.icon-button-secondary
+{
+    background-color: var(--accent-2-cr);
+}
